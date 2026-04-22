@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>the chemistry — sexual wellness, clinically made.</title>
+<meta name="description" content="Doctor-reviewed intimate care, supplements, toys and telehealth from The Chemistry — a new clinical standard for sexual wellness in India." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Geist:wght@300..700&family=Geist+Mono:wght@300..500&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #f7f1e9;
+    --bg-warm: #efe5d8;
+    --blush: #f3d9d2;
+    --pink: #e0a9a1;
+    --dusk: #7c1f2a;
+    --dusk-deep: #5a1520;
+    --ink: #1e0f0e;
+    --ink-soft: #4a332f;
+    --line: rgba(30, 15, 14, 0.12);
+    --line-soft: rgba(30, 15, 14, 0.06);
+
+    --f-display: "Fraunces", "Georgia", serif;
+    --f-body: "Geist", -apple-system, sans-serif;
+    --f-mono: "Geist Mono", "SF Mono", monospace;
+
+    --ease: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--f-body);
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; }
+  img { max-width: 100%; display: block; }
+
+  .wrap { width: 100%; max-width: 1440px; margin: 0 auto; padding: 0 32px; }
+  @media (max-width: 768px) { .wrap { padding: 0 20px; } }
+
+  .tag {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--ink-soft);
+  }
+  .num {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+  }
+
+  /* ================ ANNOUNCEMENT BAR ================ */
+  .announce {
+    background: var(--ink);
+    color: var(--bg);
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .announce-track {
+    display: flex;
+    gap: 64px;
+    white-space: nowrap;
+    padding: 10px 0;
+    animation: marquee 40s linear infinite;
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .announce-track span { display: inline-flex; align-items: center; gap: 64px; }
+  .announce-track span::after {
+    content: "✦";
+    color: var(--pink);
+    margin-left: 64px;
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ================ NAV ================ */
+  nav.primary {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(247, 241, 233, 0.82);
+    backdrop-filter: saturate(140%) blur(12px);
+    -webkit-backdrop-filter: saturate(140%) blur(12px);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .nav-inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 18px 32px;
+    gap: 40px;
+  }
+  .logo {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    font-family: var(--f-display);
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .logo em { font-style: italic; color: var(--dusk); font-weight: 400; }
+  .logo-mark {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--dusk);
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: middle;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    font-size: 13px;
+    letter-spacing: 0.01em;
+    color: var(--ink-soft);
+  }
+  .nav-links a { transition: color 0.2s var(--ease); position: relative; padding: 4px 0; }
+  .nav-links a:hover { color: var(--dusk); }
+  .nav-links a::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+    height: 1px; background: var(--dusk);
+    transform: scaleX(0); transform-origin: right;
+    transition: transform 0.3s var(--ease);
+  }
+  .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
+
+  .nav-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    font-size: 13px;
+  }
+  .nav-right a { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-soft); }
+  .nav-right a:hover { color: var(--dusk); }
+  .bag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+  .bag b { font-weight: 500; color: var(--ink); }
+
+  .hamburger { display: none; width: 28px; height: 20px; position: relative; }
+  .hamburger span {
+    position: absolute; left: 0; right: 0; height: 1.5px; background: var(--ink);
+  }
+  .hamburger span:nth-child(1) { top: 2px; }
+  .hamburger span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+  .hamburger span:nth-child(3) { bottom: 2px; }
+
+  @media (max-width: 1024px) {
+    .nav-links { display: none; }
+    .hamburger { display: block; }
+    .nav-inner { grid-template-columns: auto 1fr auto; }
+  }
+
+  /* ================ HERO ================ */
+  .hero {
+    position: relative;
+    padding: 56px 0 72px;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 50% at 85% 30%, var(--blush) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 48px;
+    align-items: center;
+    position: relative;
+  }
+  .hero-kicker {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 40px;
+  }
+  .hero-kicker::before, .hero-kicker::after {
+    content: ""; flex: 0 0 24px; height: 1px; background: var(--ink-soft); opacity: 0.4;
+  }
+  .hero-kicker::after { flex: 1; }
+
+  .hero h1 {
+    font-family: var(--f-display);
+    font-weight: 300;
+    font-size: clamp(48px, 7.4vw, 104px);
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin-bottom: 32px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--dusk);
+    font-variation-settings: "opsz" 144;
+  }
+  .hero-body {
+    max-width: 440px;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin-bottom: 40px;
+  }
+
+  .cta-row { display: flex; gap: 14px; align-items: center; margin-bottom: 48px; flex-wrap: wrap; }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 15px 24px;
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    transition: all 0.25s var(--ease);
+    border: 1px solid transparent;
+  }
+  .btn-primary { background: var(--dusk); color: var(--bg); }
+  .btn-primary:hover { background: var(--dusk-deep); transform: translateY(-1px); }
+  .btn-secondary { background: transparent; color: var(--ink); border-color: var(--ink); }
+  .btn-secondary:hover { background: var(--ink); color: var(--bg); }
+  .btn .arrow { transition: transform 0.25s var(--ease); }
+  .btn:hover .arrow { transform: translateX(3px); }
+
+  .hero-trust {
+    display: flex; gap: 24px; align-items: center;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--ink-soft);
+    max-width: 500px;
+  }
+  .hero-trust svg { flex-shrink: 0; }
+
+  .hero-visual {
+    position: relative;
+    aspect-ratio: 0.85;
+    max-height: 640px;
+  }
+  .hero-visual svg.main {
+    width: 100%; height: 100%;
+  }
+  .hero-caption {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background: rgba(247, 241, 233, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 999px;
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .hero-caption .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--dusk); }
+
+  @media (max-width: 900px) {
+    .hero { padding: 32px 0 48px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+    .hero-visual { aspect-ratio: 1; max-height: 420px; }
+  }
+
+  /* ================ STRIP OF PILLS ================ */
+  .values {
+    padding: 40px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: var(--bg-warm);
+  }
+  .values-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  .value {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .value-num {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    color: var(--dusk);
+    letter-spacing: 0.1em;
+    padding-top: 4px;
+  }
+  .value h4 {
+    font-family: var(--f-display);
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    margin-bottom: 4px;
+    color: var(--ink);
+  }
+  .value p {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  @media (max-width: 900px) {
+    .values-inner { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  }
+  @media (max-width: 520px) {
+    .values-inner { grid-template-columns: 1fr; }
+  }
+
+  /* ================ SECTION HEADERS ================ */
+  section.section { padding: 96px 0; }
+  .section-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 56px;
+    flex-wrap: wrap;
+  }
+  .section-head-left { max-width: 680px; }
+  .section-head h2 {
+    font-family: var(--f-display);
+    font-weight: 300;
+    font-size: clamp(36px, 4.8vw, 64px);
+    line-height: 1.0;
+    letter-spacing: -0.025em;
+    margin-top: 20px;
+    color: var(--ink);
+  }
+  .section-head h2 em { font-style: italic; color: var(--dusk); font-weight: 300; }
+  .section-head p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    max-width: 540px;
+  }
+  .section-head-right {
+    display: flex; align-items: center; gap: 10px;
+    padding-bottom: 12px;
+  }
+  .section-head-right a {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 13px; color: var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 4px;
+    transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+  }
+  .section-head-right a:hover { color: var(--dusk); border-color: var(--dusk); }
+
+  /* ================ CATEGORIES ================ */
+  .cats {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+  }
+  .cat {
+    position: relative;
+    padding: 40px 28px 32px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+    transition: background 0.3s var(--ease);
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cat:nth-child(1) { background: #f3d9d2; }
+  .cat:nth-child(2) { background: #ebd4c5; }
+  .cat:nth-child(3) { background: #e8c4bd; }
+  .cat:nth-child(4) { background: #f0dfd6; }
+  .cat:nth-child(5) { background: #dbb5ad; }
+  .cat:nth-child(6) { background: #ecd7d1; }
+
+  .cat-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .cat h3 {
+    font-family: var(--f-display);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-top: 140px;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+  .cat h3 em { font-style: italic; }
+  .cat p {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+  .cat-cta {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+    display: inline-flex; align-items: center; gap: 8px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(30, 15, 14, 0.18);
+  }
+  .cat-cta .arr { transition: transform 0.25s var(--ease); }
+  .cat:hover .cat-cta .arr { transform: translateX(4px); }
+  .cat-illust {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 86px; height: 86px;
+    opacity: 0.95;
+  }
+  @media (max-width: 1100px) { .cats { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 640px) { .cats { grid-template-columns: repeat(2, 1fr); } }
+
+  /* ================ PRODUCTS ================ */
+  .products-section { background: var(--bg); }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .product {
+    position: relative;
+    cursor: pointer;
+  }
+  .product-visual {
+    position: relative;
+    aspect-ratio: 0.92;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    transition: transform 0.4s var(--ease);
+  }
+  .product:hover .product-visual { transform: translateY(-4px); }
+  .product:nth-child(1) .product-visual { background: #efd5ce; }
+  .product:nth-child(2) .product-visual { background: #e6d1c2; }
+  .product:nth-child(3) .product-visual { background: #dbb5ad; }
+  .product:nth-child(4) .product-visual { background: #f1dfd8; }
+
+  .product-tag {
+    position: absolute;
+    top: 14px; left: 14px;
+    font-family: var(--f-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    background: var(--bg);
+    color: var(--ink);
+    border-radius: 999px;
+  }
+  .product-add {
+    position: absolute;
+    bottom: 14px; right: 14px;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--bg);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: all 0.25s var(--ease);
+    font-size: 18px;
+  }
+  .product:hover .product-add { opacity: 1; transform: translateY(0); }
+  .product-add:hover { background: var(--dusk); }
+
+  .product-visual svg.prod {
+    width: 100%; height: 100%;
+  }
+
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .product h4 {
+    font-family: var(--f-display);
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: -0.01em;
+    margin-bottom: 2px;
+  }
+  .product h4 em { font-style: italic; color: var(--dusk); }
+  .product-meta {
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+  .product-price {
+    font-family: var(--f-mono);
+    font-size: 13px;
+    color: var(--ink);
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 960px) { .products { grid-template-columns: repeat(2, 1fr); } }
+
+  /* ================ COUPLE PANEL ================ */
+  .couple {
+    background: var(--dusk);
+    color: var(--bg);
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .couple::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 60%;
+    height: 140%;
+    background: radial-gradient(ellipse at center, rgba(243, 217, 210, 0.18) 0%, transparent 60%);
+  }
+  .couple-inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .couple .tag { color: var(--blush); }
+  .couple h2 {
+    font-family: var(--f-display);
+    font-weight: 300;
+    font-size: clamp(48px, 7vw, 96px);
+    line-height: 0.96;
+    letter-spacing: -0.03em;
+    margin: 18px 0 24px;
+  }
+  .couple h2 em { font-style: italic; color: var(--blush); }
+  .couple p {
+    color: rgba(247, 241, 233, 0.76);
+    font-size: 17px;
+    line-height: 1.55;
+    max-width: 460px;
+    margin-bottom: 36px;
+  }
+  .couple .btn-primary {
+    background: var(--bg);
+    color: var(--ink);
+  }
+  .couple .btn-primary:hover { background: var(--blush); }
+
+  .couple-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .couple-list li {
+    display: grid;
+    grid-template-columns: 40px 1fr auto;
+    gap: 18px;
+    align-items: center;
+    padding: 22px 0;
+    border-top: 1px solid rgba(247, 241, 233, 0.18);
+  }
+  .couple-list li:last-child { border-bottom: 1px solid rgba(247, 241, 233, 0.18); }
+  .couple-list .i-num {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--blush);
+  }
+  .couple-list .i-name {
+    font-family: var(--f-display);
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .couple-list .i-name em { font-style: italic; }
+  .couple-list .i-price {
+    font-family: var(--f-mono);
+    font-size: 13px;
+    color: var(--blush);
+  }
+  .couple-list .i-desc {
+    font-size: 12.5px;
+    color: rgba(247, 241, 233, 0.65);
+    margin-top: 2px;
+  }
+
+  @media (max-width: 900px) {
+    .couple-inner { grid-template-columns: 1fr; gap: 40px; }
+    .couple { padding: 72px 0; }
+  }
+
+  /* ================ TELEHEALTH ================ */
+  .tele {
+    background: var(--bg);
+    padding: 120px 0;
+  }
+  .tele-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 72px;
+    align-items: center;
+  }
+  .tele-visual {
+    aspect-ratio: 0.88;
+    background: linear-gradient(155deg, #efd5ce 0%, #e8c4bd 100%);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  .tele-visual svg { width: 100%; height: 100%; }
+  .tele-stats {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 18px;
+    background: rgba(247, 241, 233, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 6px;
+  }
+  .tele-stat .big {
+    font-family: var(--f-display);
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .tele-stat .big em { font-style: italic; color: var(--dusk); }
+  .tele-stat .lbl {
+    font-family: var(--f-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 6px;
+  }
+  .tele h2 {
+    font-family: var(--f-display);
+    font-weight: 300;
+    font-size: clamp(40px, 5.4vw, 72px);
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+    margin: 18px 0 24px;
+  }
+  .tele h2 em { font-style: italic; color: var(--dusk); }
+  .tele p { color: var(--ink-soft); font-size: 16px; line-height: 1.55; max-width: 460px; margin-bottom: 28px; }
+  .tele-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 36px;
+    max-width: 460px;
+  }
+  .tele-features li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: var(--ink);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .tele-features .check {
+    flex-shrink: 0;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: var(--blush);
+    color: var(--dusk);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 11px;
+  }
+  @media (max-width: 900px) {
+    .tele-inner { grid-template-columns: 1fr; gap: 40px; }
+    .tele { padding: 72px 0; }
+  }
+
+  /* ================ PROTOCOL (CARE PLANS) ================ */
+  .protocol {
+    padding: 120px 0;
+    background: var(--bg-warm);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .protocol-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .plan {
+    background: var(--bg);
+    padding: 32px 28px 28px;
+    border-radius: 4px;
+    border: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+    position: relative;
+    transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  }
+  .plan:hover { transform: translateY(-4px); box-shadow: 0 24px 48px -20px rgba(30,15,14,0.15); }
+  .plan.featured {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+  .plan.featured .num, .plan.featured .plan-desc { color: rgba(247,241,233,0.7); }
+  .plan.featured .plan-price em { color: var(--blush); }
+  .plan.featured .plan-list li { border-color: rgba(247,241,233,0.18); }
+  .plan.featured .plan-list li::before { background: var(--blush); }
+  .plan-badge {
+    position: absolute;
+    top: -10px; right: 28px;
+    background: var(--dusk);
+    color: var(--bg);
+    font-family: var(--f-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+  .plan h3 {
+    font-family: var(--f-display);
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: -0.02em;
+    margin: 14px 0 8px;
+  }
+  .plan h3 em { font-style: italic; color: var(--dusk); }
+  .plan.featured h3 em { color: var(--blush); }
+  .plan-desc { font-size: 13px; color: var(--ink-soft); margin-bottom: 24px; line-height: 1.5; }
+  .plan-price {
+    font-family: var(--f-display);
+    font-size: 42px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+    line-height: 1;
+  }
+  .plan-price em { font-style: italic; color: var(--dusk); }
+  .plan-price-sub {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 24px;
+  }
+  .plan-list {
+    list-style: none;
+    margin-bottom: 24px;
+    flex-grow: 1;
+  }
+  .plan-list li {
+    position: relative;
+    padding: 10px 0 10px 22px;
+    font-size: 13px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .plan-list li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 18px;
+    width: 10px; height: 1px;
+    background: var(--dusk);
+  }
+  .plan .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  @media (max-width: 900px) {
+    .protocol-grid { grid-template-columns: 1fr; }
+    .protocol { padding: 72px 0; }
+  }
+
+  /* ================ TESTIMONIAL / PRESS ================ */
+  .quote {
+    padding: 120px 0 80px;
+    text-align: center;
+    position: relative;
+  }
+  .quote-mark {
+    font-family: var(--f-display);
+    font-size: 120px;
+    line-height: 0.5;
+    color: var(--pink);
+    opacity: 0.6;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-style: italic;
+  }
+  .quote blockquote {
+    font-family: var(--f-display);
+    font-weight: 300;
+    font-size: clamp(28px, 3.6vw, 48px);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    max-width: 960px;
+    margin: 0 auto 36px;
+    color: var(--ink);
+  }
+  .quote blockquote em { font-style: italic; color: var(--dusk); }
+  .quote cite {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-style: normal;
+  }
+
+  .press {
+    padding: 48px 0 96px;
+    border-top: 1px solid var(--line);
+  }
+  .press-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .press .tag { margin-bottom: 0; }
+  .press-logos {
+    display: flex;
+    gap: 56px;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0.7;
+  }
+  .press-logo {
+    font-family: var(--f-display);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: var(--ink-soft);
+  }
+  .press-logo.italic { font-style: italic; }
+  .press-logo.serif-bold { font-weight: 600; letter-spacing: -0.02em; }
+  .press-logo.caps { text-transform: uppercase; letter-spacing: 0.15em; font-size: 13px; font-family: var(--f-mono); }
+
+  /* ================ JOURNAL ================ */
+  .journal-section { background: var(--bg); padding: 96px 0 120px; border-top: 1px solid var(--line); }
+  .journal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .article { cursor: pointer; }
+  .article-visual {
+    aspect-ratio: 1.25;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.4s var(--ease);
+  }
+  .article:hover .article-visual { transform: translateY(-4px); }
+  .article:nth-child(1) .article-visual { background: linear-gradient(135deg, #efd5ce, #e0a9a1); }
+  .article:nth-child(2) .article-visual { background: linear-gradient(135deg, #ebd4c5, #dbb5ad); }
+  .article:nth-child(3) .article-visual { background: linear-gradient(135deg, #f3d9d2, #ecd7d1); }
+  .article-visual svg { width: 100%; height: 100%; }
+  .article-meta {
+    font-family: var(--f-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+  }
+  .article-meta .sep { color: var(--dusk); margin: 0 8px; }
+  .article h3 {
+    font-family: var(--f-display);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    margin-bottom: 10px;
+  }
+  .article h3 em { font-style: italic; color: var(--dusk); }
+  .article p {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+  @media (max-width: 900px) {
+    .journal { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ================ FAQ ================ */
+  .faq-section { padding: 120px 0; background: var(--bg-warm); border-top: 1px solid var(--line); }
+  .faq {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+  }
+  .faq-left h2 {
+    font-family: var(--f-display);
+    font-weight: 300;
+    font-size: clamp(36px, 4.8vw, 64px);
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+    margin: 20px 0 20px;
+  }
+  .faq-left h2 em { font-style: italic; color: var(--dusk); }
+  .faq-left p { font-size: 15px; color: var(--ink-soft); line-height: 1.55; max-width: 340px; }
+  .faq-left .btn { margin-top: 24px; }
+
+  .faq-list { border-top: 1px solid var(--ink); }
+  .faq-item { border-bottom: 1px solid var(--ink); }
+  .faq-q {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+    font-family: var(--f-display);
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    gap: 24px;
+  }
+  .faq-q em { font-style: italic; }
+  .faq-toggle {
+    flex-shrink: 0;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--ink);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.25s var(--ease), color 0.25s var(--ease), transform 0.3s var(--ease);
+    font-size: 18px;
+    line-height: 1;
+  }
+  .faq-item.open .faq-toggle { background: var(--dusk); color: var(--bg); border-color: var(--dusk); transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease);
+  }
+  .faq-a-inner { padding-bottom: 22px; font-size: 14.5px; color: var(--ink-soft); line-height: 1.6; max-width: 680px; }
+  .faq-item.open .faq-a { max-height: 240px; }
+
+  @media (max-width: 900px) {
+    .faq { grid-template-columns: 1fr; gap: 48px; }
+    .faq-section { padding: 72px 0; }
+  }
+
+  /* ================ NEWSLETTER ================ */
+  .newsletter {
+    padding: 120px 0;
+    background: var(--blush);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .newsletter::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 10% 100%, rgba(124, 31, 42, 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 90% 0%, rgba(255, 255, 255, 0.3) 0%, transparent 40%);
+  }
+  .newsletter-inner { position: relative; max-width: 640px; margin: 0 auto; }
+  .newsletter h2 {
+    font-family: var(--f-display);
+    font-weight: 300;
+    font-size: clamp(40px, 5.4vw, 72px);
+    line-height: 1;
+    letter-spacing: -0.025em;
+    margin: 20px 0 20px;
+    color: var(--ink);
+  }
+  .newsletter h2 em { font-style: italic; color: var(--dusk); }
+  .newsletter p { color: var(--ink-soft); font-size: 15.5px; margin-bottom: 32px; }
+  .nl-form {
+    display: flex;
+    gap: 8px;
+    max-width: 480px;
+    margin: 0 auto;
+    background: var(--bg);
+    padding: 8px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+  }
+  .nl-form input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 12px 18px;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--ink);
+    outline: none;
+  }
+  .nl-form input::placeholder { color: var(--ink-soft); }
+  .nl-form button {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    transition: background 0.2s var(--ease);
+  }
+  .nl-form button:hover { background: var(--dusk); }
+  .newsletter small { display: block; margin-top: 18px; font-size: 11.5px; color: var(--ink-soft); letter-spacing: 0.01em; }
+
+  /* ================ FOOTER ================ */
+  footer {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 80px 0 32px;
+  }
+  .foot-grid {
+    display: grid;
+    grid-template-columns: 1.4fr repeat(4, 1fr);
+    gap: 48px;
+    margin-bottom: 64px;
+  }
+  .foot-brand .logo { color: var(--bg); font-size: 32px; margin-bottom: 20px; display: block; }
+  .foot-brand .logo em { color: var(--pink); }
+  .foot-brand p { font-size: 13px; color: rgba(247, 241, 233, 0.6); line-height: 1.55; max-width: 260px; margin-bottom: 24px; }
+  .socials { display: flex; gap: 10px; }
+  .socials a {
+    width: 36px; height: 36px; border-radius: 50%;
+    border: 1px solid rgba(247,241,233,0.18);
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: background 0.2s var(--ease), border-color 0.2s var(--ease);
+  }
+  .socials a:hover { background: var(--dusk); border-color: var(--dusk); }
+  .foot-col h5 {
+    font-family: var(--f-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--pink);
+    margin-bottom: 20px;
+  }
+  .foot-col ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .foot-col a { font-size: 13.5px; color: rgba(247,241,233,0.75); transition: color 0.2s var(--ease); }
+  .foot-col a:hover { color: var(--bg); }
+
+  .foot-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    border-top: 1px solid rgba(247,241,233,0.12);
+    font-size: 11.5px;
+    font-family: var(--f-mono);
+    letter-spacing: 0.08em;
+    color: rgba(247,241,233,0.45);
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .foot-bottom-right { display: flex; gap: 24px; align-items: center; }
+  .foot-bottom-right a:hover { color: var(--bg); }
+
+  .foot-cert {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .foot-cert span {
+    font-family: var(--f-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 1px solid rgba(247,241,233,0.2);
+    border-radius: 999px;
+    color: rgba(247,241,233,0.7);
+  }
+
+  @media (max-width: 1000px) {
+    .foot-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .foot-brand { grid-column: span 2; }
+  }
+  @media (max-width: 560px) {
+    .foot-grid { grid-template-columns: 1fr; }
+    .foot-brand { grid-column: span 1; }
+    .foot-bottom { flex-direction: column; align-items: flex-start; }
+  }
+
+  /* ================ REVEAL ANIMATIONS ================ */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ ANNOUNCEMENT ============ -->
+<div class="announce" aria-label="Announcements">
+  <div class="announce-track">
+    <span>Plain packaging, always</span>
+    <span>Free shipping over ₹999</span>
+    <span>Doctor-reviewed formulas</span>
+    <span>India-made, science-led</span>
+    <span>15-minute telehealth consults from ₹299</span>
+    <!-- duplicate for seamless loop -->
+    <span>Plain packaging, always</span>
+    <span>Free shipping over ₹999</span>
+    <span>Doctor-reviewed formulas</span>
+    <span>India-made, science-led</span>
+    <span>15-minute telehealth consults from ₹299</span>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="primary">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="#" class="logo"><span class="logo-mark"></span>the <em>chemistry</em></a>
+    </div>
+    <div class="nav-links">
+      <a href="#">Intimate Care</a>
+      <a href="#">Supplements</a>
+      <a href="#">Toys</a>
+      <a href="#">Couple Sets</a>
+      <a href="#">Care Plans</a>
+      <a href="#">Consult</a>
+      <a href="#">Journal</a>
+    </div>
+    <div class="nav-right">
+      <a href="#" aria-label="Search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </a>
+      <a href="#">Account</a>
+      <a href="#" class="bag">Bag <b>0</b></a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-kicker">
+          <span class="tag">Introducing § Chemistry No. 01</span>
+        </div>
+        <h1>A new <em>chemistry</em><br>for intimate wellness.</h1>
+        <p class="hero-body">Doctor-reviewed care, discreet delivery, and zero judgement. We built India's first clinical-grade sexual wellness house — because pleasure deserves a pharmacy-level standard.</p>
+        <div class="cta-row">
+          <a href="#" class="btn btn-primary">Shop the collection <span class="arrow">→</span></a>
+          <a href="#" class="btn btn-secondary">Book a consult</a>
+        </div>
+        <div class="hero-trust">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle cx="16" cy="16" r="14"/>
+            <path d="M10 16l4 4 8-9"/>
+          </svg>
+          <div>Formulated and reviewed by certified OB-GYNs, urologists &amp; sexologists. CDSCO- and FSSAI-compliant across our product lines.</div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <svg class="main" viewBox="0 0 500 580" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f3d9d2"/>
+              <stop offset="100%" stop-color="#e0a9a1"/>
+            </linearGradient>
+            <linearGradient id="bot1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7c1f2a"/>
+              <stop offset="100%" stop-color="#5a1520"/>
+            </linearGradient>
+            <linearGradient id="bot2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f7f1e9"/>
+              <stop offset="100%" stop-color="#efe5d8"/>
+            </linearGradient>
+            <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+              <feGaussianBlur stdDeviation="1.2"/>
+            </filter>
+          </defs>
+
+          <!-- Background organic shape -->
+          <circle cx="340" cy="180" r="180" fill="url(#bg1)" opacity="0.55"/>
+          <circle cx="150" cy="400" r="120" fill="#f3d9d2" opacity="0.45"/>
+
+          <!-- Big bottle center -->
+          <g transform="translate(250 310)">
+            <!-- bottle shadow -->
+            <ellipse cx="0" cy="215" rx="110" ry="12" fill="#7c1f2a" opacity="0.15"/>
+            <!-- body -->
+            <rect x="-92" y="-170" width="184" height="370" rx="16" fill="url(#bot1)"/>
+            <!-- neck -->
+            <rect x="-44" y="-220" width="88" height="54" rx="6" fill="url(#bot1)"/>
+            <!-- cap -->
+            <rect x="-52" y="-248" width="104" height="34" rx="6" fill="#1e0f0e"/>
+            <!-- cap highlight -->
+            <rect x="-52" y="-248" width="104" height="6" rx="3" fill="#2a1a18"/>
+            <!-- label -->
+            <rect x="-78" y="-100" width="156" height="200" rx="4" fill="url(#bot2)"/>
+            <!-- label text -->
+            <text x="0" y="-68" text-anchor="middle" font-family="Geist Mono, monospace" font-size="10" fill="#7c1f2a" letter-spacing="2">THE CHEMISTRY</text>
+            <line x1="-54" y1="-56" x2="54" y2="-56" stroke="#1e0f0e" stroke-width="0.5" opacity="0.3"/>
+            <text x="0" y="-20" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="36" fill="#1e0f0e">the</text>
+            <text x="0" y="18" text-anchor="middle" font-family="Fraunces, serif" font-size="28" fill="#7c1f2a">Slip</text>
+            <text x="0" y="42" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" fill="#4a332f" letter-spacing="1.2">WATER-BASED GLIDE · 100ML</text>
+            <line x1="-54" y1="58" x2="54" y2="58" stroke="#1e0f0e" stroke-width="0.5" opacity="0.3"/>
+            <text x="0" y="80" text-anchor="middle" font-family="Geist Mono, monospace" font-size="7" fill="#4a332f" letter-spacing="1.5">CH / 01 · MUMBAI</text>
+            <!-- tiny molecule icon -->
+            <g transform="translate(0 98)">
+              <circle cx="-10" cy="0" r="2" fill="#7c1f2a"/>
+              <circle cx="0" cy="-6" r="2" fill="#7c1f2a"/>
+              <circle cx="10" cy="0" r="2" fill="#7c1f2a"/>
+              <line x1="-10" y1="0" x2="0" y2="-6" stroke="#7c1f2a" stroke-width="0.7"/>
+              <line x1="0" y1="-6" x2="10" y2="0" stroke="#7c1f2a" stroke-width="0.7"/>
+              <line x1="-10" y1="0" x2="10" y2="0" stroke="#7c1f2a" stroke-width="0.7"/>
+            </g>
+          </g>
+
+          <!-- Orbital decorative dots -->
+          <circle cx="120" cy="200" r="4" fill="#7c1f2a"/>
+          <circle cx="420" cy="450" r="6" fill="#7c1f2a" opacity="0.6"/>
+          <circle cx="80" cy="500" r="3" fill="#1e0f0e"/>
+
+          <!-- small accent shape -->
+          <g transform="translate(400 120)">
+            <path d="M0 0 Q 20 -20 40 0 T 80 0" stroke="#7c1f2a" stroke-width="1" fill="none" opacity="0.5"/>
+          </g>
+        </svg>
+
+        <div class="hero-caption">
+          <span class="dot"></span>
+          Chemistry No. 01 · Starter Collection
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUES STRIP ============ -->
+<section class="values">
+  <div class="wrap">
+    <div class="values-inner">
+      <div class="value">
+        <span class="value-num">§01</span>
+        <div><h4>Doctor-reviewed</h4><p>Every formula vetted by practising OB-GYNs and urologists before it meets your skin.</p></div>
+      </div>
+      <div class="value">
+        <span class="value-num">§02</span>
+        <div><h4>Plain packaging</h4><p>Zero branding on the outer box. Your courier partner will never know what's inside.</p></div>
+      </div>
+      <div class="value">
+        <span class="value-num">§03</span>
+        <div><h4>Science-first</h4><p>No Ayurveda-washing. No "miracle herbs." Published-research ingredient decks for every product.</p></div>
+      </div>
+      <div class="value">
+        <span class="value-num">§04</span>
+        <div><h4>India-made</h4><p>Manufactured in Gurugram and Bengaluru under GMP. Priced for a real Indian shelf.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="section" style="padding: 96px 0 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-left">
+        <span class="num">§ The Catalogue — six departments</span>
+        <h2>Built for every <em>chapter</em>.</h2>
+        <p>From morning wash to bedtime supplement to the conversation you've been avoiding for six years — we run the full stack of intimate wellness, one clinical edge at a time.</p>
+      </div>
+      <div class="section-head-right">
+        <a href="#">See all categories <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cats">
+    <!-- Cat 1 -->
+    <a href="#" class="cat">
+      <div class="cat-top">
+        <span class="num">01 / 06</span>
+      </div>
+      <svg class="cat-illust" viewBox="0 0 100 100">
+        <rect x="34" y="18" width="32" height="70" rx="3" fill="#7c1f2a"/>
+        <rect x="38" y="10" width="24" height="10" rx="2" fill="#1e0f0e"/>
+        <rect x="40" y="34" width="20" height="40" rx="1" fill="#f7f1e9"/>
+        <circle cx="50" cy="54" r="4" fill="#7c1f2a"/>
+      </svg>
+      <div>
+        <h3>Intimate <em>Care</em></h3>
+        <p>pH-balanced washes, wipes, glides and soothing gels — for everyday tenderness.</p>
+        <span class="cat-cta">Explore <span class="arr">→</span></span>
+      </div>
+    </a>
+    <!-- Cat 2 -->
+    <a href="#" class="cat">
+      <div class="cat-top">
+        <span class="num">02 / 06</span>
+      </div>
+      <svg class="cat-illust" viewBox="0 0 100 100">
+        <rect x="26" y="26" width="48" height="58" rx="4" fill="#1e0f0e"/>
+        <rect x="26" y="26" width="48" height="16" rx="4" fill="#7c1f2a"/>
+        <rect x="32" y="48" width="36" height="2" fill="#f7f1e9"/>
+        <rect x="32" y="56" width="26" height="2" fill="#f7f1e9"/>
+        <rect x="32" y="64" width="30" height="2" fill="#f7f1e9"/>
+        <circle cx="68" cy="30" r="2" fill="#f7f1e9"/>
+      </svg>
+      <div>
+        <h3>OTC <em>Supplements</em></h3>
+        <p>Daily stamina, hormone support, fertility and libido — clean-label, clinically dosed.</p>
+        <span class="cat-cta">Explore <span class="arr">→</span></span>
+      </div>
+    </a>
+    <!-- Cat 3 -->
+    <a href="#" class="cat">
+      <div class="cat-top">
+        <span class="num">03 / 06</span>
+      </div>
+      <svg class="cat-illust" viewBox="0 0 100 100">
+        <ellipse cx="50" cy="60" rx="22" ry="30" fill="#7c1f2a"/>
+        <ellipse cx="50" cy="40" rx="10" ry="14" fill="#1e0f0e"/>
+        <circle cx="50" cy="38" r="3" fill="#f7f1e9"/>
+      </svg>
+      <div>
+        <h3>Wellness <em>Toys</em></h3>
+        <p>Body-safe, whisper-quiet, aesthetic-first. Medical-grade silicone, nothing more.</p>
+        <span class="cat-cta">Explore <span class="arr">→</span></span>
+      </div>
+    </a>
+    <!-- Cat 4 -->
+    <a href="#" class="cat">
+      <div class="cat-top">
+        <span class="num">04 / 06</span>
+      </div>
+      <svg class="cat-illust" viewBox="0 0 100 100">
+        <rect x="18" y="32" width="64" height="44" rx="3" fill="#1e0f0e"/>
+        <rect x="22" y="36" width="56" height="36" rx="2" fill="#f7f1e9"/>
+        <line x1="28" y1="46" x2="60" y2="46" stroke="#7c1f2a" stroke-width="1.5"/>
+        <line x1="28" y1="54" x2="54" y2="54" stroke="#4a332f" stroke-width="1" opacity="0.5"/>
+        <line x1="28" y1="62" x2="48" y2="62" stroke="#4a332f" stroke-width="1" opacity="0.5"/>
+        <circle cx="70" cy="60" r="5" fill="#7c1f2a"/>
+      </svg>
+      <div>
+        <h3>Care <em>Plans</em></h3>
+        <p>Six-month and annual subscriptions with monthly delivery + doctor check-ins.</p>
+        <span class="cat-cta">Explore <span class="arr">→</span></span>
+      </div>
+    </a>
+    <!-- Cat 5 -->
+    <a href="#" class="cat">
+      <div class="cat-top">
+        <span class="num">05 / 06</span>
+      </div>
+      <svg class="cat-illust" viewBox="0 0 100 100">
+        <circle cx="38" cy="46" r="14" fill="#7c1f2a"/>
+        <circle cx="62" cy="46" r="14" fill="#1e0f0e"/>
+        <path d="M30 74 Q 50 62 70 74" stroke="#7c1f2a" stroke-width="2" fill="none"/>
+      </svg>
+      <div>
+        <h3>Couple <em>Sets</em></h3>
+        <p>Curated duets for long-distance, new partners and re-ignitions. Packed together.</p>
+        <span class="cat-cta">Explore <span class="arr">→</span></span>
+      </div>
+    </a>
+    <!-- Cat 6 -->
+    <a href="#" class="cat">
+      <div class="cat-top">
+        <span class="num">06 / 06</span>
+      </div>
+      <svg class="cat-illust" viewBox="0 0 100 100">
+        <rect x="28" y="20" width="44" height="60" rx="6" fill="#1e0f0e"/>
+        <rect x="32" y="26" width="36" height="44" rx="2" fill="#f7f1e9"/>
+        <circle cx="50" cy="42" r="6" fill="#7c1f2a"/>
+        <rect x="38" y="52" width="24" height="2" fill="#7c1f2a"/>
+        <rect x="42" y="58" width="16" height="2" fill="#4a332f" opacity="0.5"/>
+        <circle cx="50" cy="76" r="2" fill="#f7f1e9"/>
+      </svg>
+      <div>
+        <h3>Telehealth <em>Consults</em></h3>
+        <p>15-minute private video with a certified sexologist. From ₹299. Total confidentiality.</p>
+        <span class="cat-cta">Book now <span class="arr">→</span></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="section products-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-left">
+        <span class="num">§ Best sellers — chapter one</span>
+        <h2>What people are <em>starting</em> with.</h2>
+      </div>
+      <div class="section-head-right">
+        <a href="#">Shop everything <span>→</span></a>
+      </div>
+    </div>
+
+    <div class="products">
+      <!-- Product 1 -->
+      <div class="product">
+        <div class="product-visual">
+          <span class="product-tag">Bestseller</span>
+          <button class="product-add" aria-label="Add to bag">+</button>
+          <svg class="prod" viewBox="0 0 300 300">
+            <rect x="110" y="50" width="80" height="200" rx="8" fill="#7c1f2a"/>
+            <rect x="126" y="32" width="48" height="28" rx="3" fill="#1e0f0e"/>
+            <rect x="118" y="90" width="64" height="110" fill="#f7f1e9"/>
+            <text x="150" y="118" text-anchor="middle" font-family="Geist Mono, monospace" font-size="6" fill="#7c1f2a" letter-spacing="1.2">CHEMISTRY</text>
+            <text x="150" y="150" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="22" fill="#1e0f0e">the Slip</text>
+            <text x="150" y="170" text-anchor="middle" font-family="Geist, sans-serif" font-size="5" fill="#4a332f" letter-spacing="1">WATER-BASED · 100ML</text>
+            <line x1="128" y1="182" x2="172" y2="182" stroke="#1e0f0e" stroke-width="0.3"/>
+          </svg>
+        </div>
+        <div class="product-info">
+          <div>
+            <h4>the <em>Slip</em></h4>
+            <div class="product-meta">Water-based personal glide · 100ml</div>
+          </div>
+          <div class="product-price">₹699</div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="product">
+        <div class="product-visual">
+          <span class="product-tag">New</span>
+          <button class="product-add" aria-label="Add to bag">+</button>
+          <svg class="prod" viewBox="0 0 300 300">
+            <rect x="100" y="70" width="100" height="170" rx="6" fill="#1e0f0e"/>
+            <rect x="112" y="50" width="76" height="28" rx="3" fill="#7c1f2a"/>
+            <rect x="108" y="110" width="84" height="100" fill="#f7f1e9"/>
+            <text x="150" y="134" text-anchor="middle" font-family="Geist Mono, monospace" font-size="6" fill="#7c1f2a" letter-spacing="1.2">CHEMISTRY / M</text>
+            <text x="150" y="166" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="22" fill="#1e0f0e">Steady</text>
+            <text x="150" y="184" text-anchor="middle" font-family="Geist, sans-serif" font-size="5" fill="#4a332f" letter-spacing="1">DAILY STAMINA · 30 CAPSULES</text>
+            <rect x="122" y="194" width="56" height="6" rx="1" fill="#7c1f2a"/>
+          </svg>
+        </div>
+        <div class="product-info">
+          <div>
+            <h4><em>Steady</em></h4>
+            <div class="product-meta">Daily stamina · 30-day supply</div>
+          </div>
+          <div class="product-price">₹1,499</div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="product">
+        <div class="product-visual">
+          <span class="product-tag">Couple</span>
+          <button class="product-add" aria-label="Add to bag">+</button>
+          <svg class="prod" viewBox="0 0 300 300">
+            <rect x="60" y="80" width="180" height="140" rx="6" fill="#1e0f0e"/>
+            <rect x="60" y="80" width="180" height="40" rx="6" fill="#7c1f2a"/>
+            <rect x="60" y="110" width="180" height="4" fill="#1e0f0e"/>
+            <text x="150" y="104" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="18" fill="#f7f1e9">Meet Me</text>
+            <circle cx="110" cy="160" r="22" fill="#f7f1e9"/>
+            <circle cx="150" cy="170" r="18" fill="#e0a9a1"/>
+            <circle cx="190" cy="160" r="20" fill="#f3d9d2"/>
+            <text x="150" y="210" text-anchor="middle" font-family="Geist Mono, monospace" font-size="6" fill="#f7f1e9" letter-spacing="1.5">COUPLE'S STARTER / SET 01</text>
+          </svg>
+        </div>
+        <div class="product-info">
+          <div>
+            <h4>Meet <em>Me</em></h4>
+            <div class="product-meta">Couple's starter kit · 4 essentials</div>
+          </div>
+          <div class="product-price">₹2,299</div>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product">
+        <div class="product-visual">
+          <span class="product-tag">Everyday</span>
+          <button class="product-add" aria-label="Add to bag">+</button>
+          <svg class="prod" viewBox="0 0 300 300">
+            <rect x="105" y="60" width="90" height="200" rx="45" fill="#e0a9a1"/>
+            <rect x="125" y="44" width="50" height="22" rx="3" fill="#1e0f0e"/>
+            <rect x="110" y="110" width="80" height="110" fill="#f7f1e9"/>
+            <text x="150" y="138" text-anchor="middle" font-family="Geist Mono, monospace" font-size="6" fill="#7c1f2a" letter-spacing="1.2">CHEMISTRY / F</text>
+            <text x="150" y="170" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="22" fill="#1e0f0e">After</text>
+            <text x="150" y="192" text-anchor="middle" font-family="Geist, sans-serif" font-size="5" fill="#4a332f" letter-spacing="1">pH WASH · 200ML</text>
+            <line x1="120" y1="204" x2="180" y2="204" stroke="#1e0f0e" stroke-width="0.3"/>
+          </svg>
+        </div>
+        <div class="product-info">
+          <div>
+            <h4><em>After</em></h4>
+            <div class="product-meta">pH-balanced intimate wash · 200ml</div>
+          </div>
+          <div class="product-price">₹499</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COUPLE ============ -->
+<section class="couple">
+  <div class="wrap">
+    <div class="couple-inner">
+      <div>
+        <span class="tag">§ Couple Sets</span>
+        <h2>For <em>two</em>.</h2>
+        <p>Made-together kits curated by our clinical team for real situations — the first time, the long-distance week, the stretch after a baby, the decade-in stall. Pleasure, paired.</p>
+        <a href="#" class="btn btn-primary">Discover couple sets <span class="arrow">→</span></a>
+      </div>
+      <ul class="couple-list">
+        <li>
+          <span class="i-num">01</span>
+          <div>
+            <div class="i-name">The <em>Reunion</em></div>
+            <div class="i-desc">For weekends after long weeks apart.</div>
+          </div>
+          <span class="i-price">₹2,499</span>
+        </li>
+        <li>
+          <span class="i-num">02</span>
+          <div>
+            <div class="i-name">The <em>Slow Build</em></div>
+            <div class="i-desc">For couples learning each other's chemistry.</div>
+          </div>
+          <span class="i-price">₹3,199</span>
+        </li>
+        <li>
+          <span class="i-num">03</span>
+          <div>
+            <div class="i-name">The <em>Post-partum</em></div>
+            <div class="i-desc">Soft restart, clinically guided.</div>
+          </div>
+          <span class="i-price">₹3,999</span>
+        </li>
+        <li>
+          <span class="i-num">04</span>
+          <div>
+            <div class="i-name">The <em>Rekindle</em></div>
+            <div class="i-desc">For the decade-in and bored-in-love.</div>
+          </div>
+          <span class="i-price">₹4,499</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TELEHEALTH ============ -->
+<section class="tele">
+  <div class="wrap">
+    <div class="tele-inner">
+      <div class="tele-visual">
+        <svg viewBox="0 0 400 460" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="tg1" cx="50%" cy="30%" r="60%">
+              <stop offset="0%" stop-color="#f7f1e9"/>
+              <stop offset="100%" stop-color="#e0a9a1"/>
+            </radialGradient>
+          </defs>
+          <rect width="400" height="460" fill="url(#tg1)"/>
+          <!-- phone -->
+          <g transform="translate(125 90)">
+            <rect x="0" y="0" width="150" height="280" rx="20" fill="#1e0f0e"/>
+            <rect x="8" y="8" width="134" height="264" rx="14" fill="#f7f1e9"/>
+            <!-- screen: doctor call -->
+            <rect x="8" y="8" width="134" height="40" rx="14" fill="#7c1f2a"/>
+            <circle cx="24" cy="28" r="4" fill="#f3d9d2"/>
+            <text x="36" y="32" font-family="Geist Mono, monospace" font-size="8" fill="#f7f1e9" letter-spacing="1">LIVE · DR. MEHRA</text>
+            <!-- doctor silhouette -->
+            <rect x="40" y="70" width="70" height="90" rx="8" fill="#7c1f2a" opacity="0.15"/>
+            <circle cx="75" cy="100" r="18" fill="#1e0f0e"/>
+            <path d="M50 160 Q 75 130 100 160 L 100 170 L 50 170 Z" fill="#1e0f0e"/>
+            <!-- controls -->
+            <circle cx="40" cy="210" r="12" fill="#7c1f2a"/>
+            <rect x="34" y="204" width="12" height="2" fill="#f7f1e9"/>
+            <circle cx="75" cy="210" r="12" fill="#1e0f0e"/>
+            <circle cx="75" cy="210" r="4" fill="#f7f1e9"/>
+            <circle cx="110" cy="210" r="12" fill="#e0a9a1"/>
+            <path d="M105 206 l10 8 M105 214 l10 -8" stroke="#1e0f0e" stroke-width="1.5"/>
+            <!-- indicator -->
+            <rect x="40" y="240" width="70" height="4" rx="2" fill="#f3d9d2"/>
+            <rect x="40" y="240" width="40" height="4" rx="2" fill="#7c1f2a"/>
+            <text x="75" y="258" text-anchor="middle" font-family="Geist Mono, monospace" font-size="6" fill="#4a332f" letter-spacing="1">09:48 / 15:00</text>
+          </g>
+          <!-- decorative shapes -->
+          <circle cx="60" cy="380" r="24" fill="#7c1f2a" opacity="0.2"/>
+          <circle cx="340" cy="100" r="40" fill="#f3d9d2" opacity="0.5"/>
+        </svg>
+        <div class="tele-stats">
+          <div class="tele-stat">
+            <div class="big"><em>15</em> min</div>
+            <div class="lbl">Avg. consult</div>
+          </div>
+          <div class="tele-stat">
+            <div class="big"><em>40+</em></div>
+            <div class="lbl">Specialists</div>
+          </div>
+          <div class="tele-stat">
+            <div class="big">100<em>%</em></div>
+            <div class="lbl">Private</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <span class="tag">§ Telehealth</span>
+        <h2>Speak to a <em>doctor</em>, not an algorithm.</h2>
+        <p>Fifteen private minutes with a certified sexologist, OB-GYN or urologist. Video or voice. Your records never leave our vault.</p>
+        <ul class="tele-features">
+          <li><span class="check">✓</span> Board-certified specialists across 12 Indian cities</li>
+          <li><span class="check">✓</span> Video, voice or chat — your call</li>
+          <li><span class="check">✓</span> Prescriptions delivered to your door in plain packaging</li>
+          <li><span class="check">✓</span> No records stored against your name without consent</li>
+        </ul>
+        <a href="#" class="btn btn-primary">Book a consult — ₹299 <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARE PLANS ============ -->
+<section class="protocol">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-left">
+        <span class="num">§ Care Plans — stay on protocol</span>
+        <h2>Not a subscription. A <em>protocol</em>.</h2>
+        <p>Your regimen, curated by our doctors and delivered every 30 days. Pause, swap or cancel anytime.</p>
+      </div>
+    </div>
+
+    <div class="protocol-grid">
+      <!-- Plan 1 -->
+      <div class="plan">
+        <span class="num">Plan 01</span>
+        <h3>The <em>Starter</em></h3>
+        <p class="plan-desc">One-product monthly refill with a quarterly doctor check-in.</p>
+        <div class="plan-price">₹799<em>/mo</em></div>
+        <div class="plan-price-sub">Billed monthly · 30 days delivery</div>
+        <ul class="plan-list">
+          <li>Choose any one Chemistry product</li>
+          <li>Quarterly 15-minute consult</li>
+          <li>Plain packaging + discreet billing</li>
+          <li>Pause or cancel anytime</li>
+        </ul>
+        <a href="#" class="btn btn-secondary">Start Plan 01</a>
+      </div>
+      <!-- Plan 2 -->
+      <div class="plan featured">
+        <span class="plan-badge">Most popular</span>
+        <span class="num">Plan 02</span>
+        <h3>The <em>Regimen</em></h3>
+        <p class="plan-desc">Curated multi-product routine with monthly consult &amp; lab reviews.</p>
+        <div class="plan-price">₹1,999<em>/mo</em></div>
+        <div class="plan-price-sub">Billed monthly · save 22% vs à-la-carte</div>
+        <ul class="plan-list">
+          <li>Up to 3 products, calibrated monthly</li>
+          <li>Unlimited doctor chat</li>
+          <li>Monthly 30-minute review call</li>
+          <li>Free lab tests twice a year</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#" class="btn btn-primary" style="background: var(--blush); color: var(--ink);">Start Plan 02</a>
+      </div>
+      <!-- Plan 3 -->
+      <div class="plan">
+        <span class="num">Plan 03</span>
+        <h3>The <em>Duo</em></h3>
+        <p class="plan-desc">Our Regimen, built for two. Shared doctor, parallel protocols.</p>
+        <div class="plan-price">₹3,499<em>/mo</em></div>
+        <div class="plan-price-sub">For two people · billed monthly</div>
+        <ul class="plan-list">
+          <li>Two personalised regimens</li>
+          <li>Couple's consult + individual check-ins</li>
+          <li>Shared journal &amp; private notes</li>
+          <li>Free lab tests twice a year</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#" class="btn btn-secondary">Start Plan 03</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section class="quote">
+  <div class="wrap">
+    <div class="quote-mark">"</div>
+    <blockquote>The Chemistry is trying to do for intimate wellness what Kaya did for dermatology in India — take it <em>out of the alley</em> and onto a clean, clinical shelf.</blockquote>
+    <cite>— Mint Lounge · Issue No. 184</cite>
+  </div>
+</section>
+
+<!-- ============ PRESS ============ -->
+<section class="press">
+  <div class="wrap">
+    <div class="press-row">
+      <span class="tag">§ As seen in</span>
+      <div class="press-logos">
+        <span class="press-logo italic">Vogue India</span>
+        <span class="press-logo serif-bold">Mint Lounge</span>
+        <span class="press-logo caps">ELLE</span>
+        <span class="press-logo">The Economic Times</span>
+        <span class="press-logo italic">Tweak</span>
+        <span class="press-logo caps">HOMEGROWN</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNAL ============ -->
+<section class="journal-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head-left">
+        <span class="num">§ Field notes — the Journal</span>
+        <h2>Plainspoken <em>science</em>, reviewed by doctors.</h2>
+      </div>
+      <div class="section-head-right">
+        <a href="#">Read the Journal <span>→</span></a>
+      </div>
+    </div>
+
+    <div class="journal">
+      <article class="article">
+        <div class="article-visual">
+          <svg viewBox="0 0 400 320">
+            <circle cx="200" cy="160" r="80" fill="#f7f1e9" opacity="0.7"/>
+            <text x="200" y="148" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="42" fill="#7c1f2a">pH</text>
+            <text x="200" y="188" text-anchor="middle" font-family="Geist Mono, monospace" font-size="10" fill="#1e0f0e" letter-spacing="3">3.8 – 4.5</text>
+            <circle cx="100" cy="80" r="10" fill="#1e0f0e"/>
+            <circle cx="320" cy="250" r="16" fill="#1e0f0e" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="article-meta">Skin Science <span class="sep">/</span> 6 min read <span class="sep">/</span> 14 Apr</div>
+        <h3>Why the <em>pH</em> of your wash matters more than the fragrance.</h3>
+        <p>A dermatologist walks us through the three numbers on the bottle you've never read — and why one of them is quietly wrecking your microbiome.</p>
+      </article>
+
+      <article class="article">
+        <div class="article-visual">
+          <svg viewBox="0 0 400 320">
+            <rect x="120" y="60" width="160" height="200" rx="8" fill="#f7f1e9" opacity="0.7"/>
+            <text x="200" y="140" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="38" fill="#1e0f0e">first-time</text>
+            <text x="200" y="180" text-anchor="middle" font-family="Fraunces, serif" font-size="28" fill="#7c1f2a">a guide</text>
+            <line x1="160" y1="210" x2="240" y2="210" stroke="#1e0f0e" stroke-width="1"/>
+            <text x="200" y="228" text-anchor="middle" font-family="Geist Mono, monospace" font-size="8" fill="#4a332f" letter-spacing="2">THE CHEMISTRY · 02</text>
+          </svg>
+        </div>
+        <div class="article-meta">Couples <span class="sep">/</span> 9 min read <span class="sep">/</span> 08 Apr</div>
+        <h3>An <em>honest</em> guide to first-time lube for couples.</h3>
+        <p>What to pick, what to skip, and the single ingredient you should absolutely avoid. No judgement, just chemistry.</p>
+      </article>
+
+      <article class="article">
+        <div class="article-visual">
+          <svg viewBox="0 0 400 320">
+            <g transform="translate(200 160)">
+              <circle cx="0" cy="-40" r="10" fill="#7c1f2a"/>
+              <circle cx="40" cy="10" r="10" fill="#7c1f2a"/>
+              <circle cx="-40" cy="10" r="10" fill="#7c1f2a"/>
+              <circle cx="20" cy="50" r="10" fill="#1e0f0e"/>
+              <circle cx="-20" cy="50" r="10" fill="#1e0f0e"/>
+              <line x1="0" y1="-40" x2="40" y2="10" stroke="#7c1f2a" stroke-width="2"/>
+              <line x1="40" y1="10" x2="20" y2="50" stroke="#7c1f2a" stroke-width="2"/>
+              <line x1="20" y1="50" x2="-20" y2="50" stroke="#1e0f0e" stroke-width="2"/>
+              <line x1="-20" y1="50" x2="-40" y2="10" stroke="#7c1f2a" stroke-width="2"/>
+              <line x1="-40" y1="10" x2="0" y2="-40" stroke="#7c1f2a" stroke-width="2"/>
+            </g>
+          </svg>
+        </div>
+        <div class="article-meta">Supplements <span class="sep">/</span> 11 min read <span class="sep">/</span> 01 Apr</div>
+        <h3>The science of <em>stamina</em>: what actually works.</h3>
+        <p>We read 48 peer-reviewed papers so you don't have to. The four ingredients with real data — and the dozens that are just marketing.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq-section">
+  <div class="wrap">
+    <div class="faq">
+      <div class="faq-left">
+        <span class="num">§ Plain answers</span>
+        <h2>Things people <em>actually</em> ask us.</h2>
+        <p>If yours isn't here, our customer care team reads every note — and our doctors answer clinical questions within 24 hours.</p>
+        <a href="#" class="btn btn-secondary">Ask a question</a>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-q">Is the packaging <em>really</em> plain? <span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. Our outer couriers carry zero branding — no "Chemistry", no molecule mark, no colour association. The invoice is listed under our parent entity "Reagent Labs Pvt. Ltd." and the SMS/email notifications use the same neutral name.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Who reviews your <em>formulas</em>? <span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Every Chemistry product is reviewed by a three-doctor panel before launch: a dermatologist, a gynaecologist or urologist (depending on the product), and a clinical pharmacologist. The panel is disclosed on every product page with names and registrations.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How <em>private</em> are the telehealth consults? <span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">End-to-end encrypted, not recorded by default, and stored against a pseudonym unless you explicitly link your account. You can download and permanently delete your session notes at any time from your dashboard.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do you offer <em>EMI</em> on Care Plans? <span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Care Plans are already monthly-billed, so there's no EMI charge — you pay for what you receive, month by month. For one-time purchases above ₹3,000 we offer no-cost EMI across major Indian banks and Simpl.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can I return a product <em>once opened</em>? <span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">For hygiene reasons, intimate care and toys cannot be returned once the seal is broken. Supplements and skincare are returnable within 14 days — opened or unopened — if there's a tolerance or efficacy issue. We also offer a free reformulation consult.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Are you available <em>outside</em> India? <span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Not yet. We ship pan-India with free delivery above ₹999. International launches begin Q3 2026 with the UAE and Singapore first. Join the newsletter for early access.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="newsletter">
+  <div class="wrap">
+    <div class="newsletter-inner">
+      <span class="num">§ No spam. All science.</span>
+      <h2>Fieldnotes, <em>fortnightly</em>.</h2>
+      <p>Clinical research made readable. New drops, early access, and the occasional letter from our doctors. Worth the inbox space — or it's not.</p>
+      <form class="nl-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓';">
+        <input type="email" placeholder="you@somewhere.in" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <small>Get 10% off your first order · unsubscribe in one click</small>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#" class="logo"><span class="logo-mark" style="background: var(--pink);"></span>the <em>chemistry</em></a>
+        <p>A new clinical standard for sexual wellness in India. Reviewed by doctors. Delivered plainly. Built by Aman Gupta &amp; team.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497-3.753c-.002-.249 1.51-2.772 1.818-4.013z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="m9.75 15.02 5.5-3.27-5.5-3.27v6.54z" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.5 18H6V9.5h2.5V18zM7.25 8.3a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9zM18 18h-2.5v-4.25c0-1.02-.35-1.7-1.25-1.7-.68 0-1.1.46-1.28.91-.07.16-.09.38-.09.6V18H10.4s.03-7.6 0-8.5h2.48v1.2c.33-.51.92-1.24 2.25-1.24 1.65 0 2.87 1.07 2.87 3.38V18z"/></svg></a>
+        </div>
+        <div class="foot-cert">
+          <span>CDSCO</span>
+          <span>FSSAI</span>
+          <span>GMP-certified</span>
+          <span>ISO 22716</span>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="#">Intimate Care</a></li>
+          <li><a href="#">Supplements</a></li>
+          <li><a href="#">Toys</a></li>
+          <li><a href="#">Couple Sets</a></li>
+          <li><a href="#">Care Plans</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Care</h5>
+        <ul>
+          <li><a href="#">Book a consult</a></li>
+          <li><a href="#">Doctor panel</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">Ingredient glossary</a></li>
+          <li><a href="#">Safety &amp; testing</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About the Chemistry</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Wholesale</a></li>
+          <li><a href="#">Affiliates</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Shipping policy</a></li>
+          <li><a href="#">Returns &amp; refunds</a></li>
+          <li><a href="#">Medical disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2026 Reagent Labs Pvt. Ltd. · All rights reserved. Made with care in Bengaluru.</span>
+      <div class="foot-bottom-right">
+        <a href="#">EN · IN</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ===== FAQ accordion =====
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // ===== Scroll reveals =====
+  const toReveal = document.querySelectorAll('section.section, .couple, .tele, .protocol, .quote, .journal-section, .faq-section, .newsletter');
+  toReveal.forEach(el => el.classList.add('reveal'));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  toReveal.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
